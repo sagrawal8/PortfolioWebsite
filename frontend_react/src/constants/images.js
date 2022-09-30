@@ -34,6 +34,7 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
+import profileImage from '../assets/profileImage.png';
 
 const images = {
   email,
@@ -60,6 +61,7 @@ const images = {
   about03,
   about04,
   profile,
+  profileImage,
   circle,
   logo,
   adidas,
