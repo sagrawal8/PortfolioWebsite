@@ -17,7 +17,7 @@ const Navbar = () => {
         {['home', 'about', 'work', 'skills', 'testimonial', 'contact', 'resume'].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
-            {item != 'resume' 
+            {item !== 'resume' 
               ? <a href={`#${item}`}>{item}</a> 
               : <a href='https://drive.google.com/file/d/1nw2ONFdUq74sELuEBimS2ApRWy_POC6T/view?usp=sharing' target="_blank" rel="noopener noreferrer">{item}</a>
             }
