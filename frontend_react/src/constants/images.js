@@ -35,6 +35,7 @@ import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 import profileImage from '../assets/profileImage.png';
+import psql from '../assets/PSQL.png'
 
 const images = {
   email,
@@ -71,6 +72,7 @@ const images = {
   nb,
   skype,
   spotify,
+  psql,
 };
 
 export default images;

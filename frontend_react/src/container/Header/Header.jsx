@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-//import { AppWrap } from '../../wrapper';
+import { AppWrap } from '../../wrapper';
 import { images } from '../../constants';
 import './Header.scss';
 
@@ -33,8 +33,8 @@ const Header = () => (
         </div>
 
         <div className="tag-cmp app__flex">
-          <p className="p-text">Full Stack Developer</p>
-          <p className="p-text">Recent Graduate</p>
+        <p className="p-text">Full-Stack Developer</p>
+          <p className="p-text">Masters in Computer Science</p>
         </div>
       </div>
     </motion.div>
@@ -44,7 +44,7 @@ const Header = () => (
       transition={{ duration: 0.5, delayChildren: 0.5 }}
       className="app__header-img"
     >
-      <img src={images.profileImage} alt="profile_bg" />
+      <img src={images.profile} alt="profile_bg" />
       <motion.img
         whileInView={{ scale: [0, 1] }}
         transition={{ duration: 1, ease: 'easeInOut' }}
@@ -59,7 +59,7 @@ const Header = () => (
       whileInView={scaleVariants.whileInView}
       className="app__header-circles"
     >
-      {[images.flutter, images.redux, images.sass].map((circle, index) => (
+      {[images.javascript, images.react, images.psql].map((circle, index) => (
         <div className="circle-cmp app__flex" key={`circle-${index}`}>
           <img src={circle} alt="profile_bg" />
         </div>
@@ -68,5 +68,4 @@ const Header = () => (
   </div>
 );
 
-
-export default Header
+export default AppWrap(Header, 'home');
