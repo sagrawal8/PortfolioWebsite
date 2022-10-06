@@ -167,33 +167,37 @@
 
 .app__header-img {
   flex: 1;
-  height: 100%;
+  height:fit-content;
 
-  // display: flex;
-  // justify-content: flex-end;
-  // align-items: flex-start;
-  // position: relative;
+  display: flex;
+  justify-content: center;
+  align-items:center;
 
   img {
-    width: 40%;
-    object-fit: contain;
+    width: 120%;
+    object-fit: absolute;
     z-index: 1;
-    position: absolute;
-    right: 550px;
-    top: 300px;
+    @media screen and (max-width: 1200px) {
+      width: 60%; 
+    }
   }
 
   .overlay_circle {
+    width: 30%;
     position: absolute;
-    top: 240px;
-    right: 100px;
-    left: 400px;
     z-index: 0;
-    width: 60%;
-    height: 60%;
+    resize: both;
+
+    @media screen and (max-width: 1200px) {
+      width: 30%; 
+    }
+
   }
 
   @media screen and (max-width: 1200px) {
     margin: 2rem 0;
+  }
+  @media screen and (max-width: 450px) {
+    display: none; 
   }
 }
