@@ -125,11 +125,8 @@
         height: 15px;
         color: var(--gray-color);
       }
-  
+
       &:hover {
-        background-color: var(--secondary-color);
-        border-color: var(--secondary-color);
-  
         svg {
           color: var(--white-color);
         }
@@ -146,6 +143,27 @@
           height: 30px;
         }
       }
+    }
+  }
+
+  .app__social__github {
+    &:hover {
+      background-color: var(--black-color);
+      border-color: var(--black-color);
+    }
+  }
+
+  .app__social__insta {
+    &:hover {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);  ;
+      border-color: #bc2a8d;
+    }
+  }
+
+  .app__social__linkedin {
+    &:hover {
+      background-color: #0072b1;
+      border-color: #0072b1;
     }
   }
   
