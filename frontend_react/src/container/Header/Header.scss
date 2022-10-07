@@ -172,24 +172,39 @@
   display: flex;
   justify-content: center;
   align-items:center;
+  position: relative;
 
-  img {
+  .app__header-img-ninja {
     width: 120%;
-    object-fit: absolute;
     z-index: 1;
     @media screen and (max-width: 1200px) {
       width: 60%; 
     }
   }
 
-  .overlay_circle {
-    width: 30%;
-    position: absolute;
-    z-index: 0;
-    resize: both;
+  .app__header-img-eye {
+    visibility: hidden;
+    @media screen and (min-width: 1918px) {
+      visibility: visible;
+      z-index: 2;
+      width: 5%;
+      position: absolute;
+      object-fit: center;
+    }
+    
 
     @media screen and (max-width: 1200px) {
-      width: 30%; 
+      width: 2.8%; 
+    }
+  }
+
+  .overlay_circle {
+    width: 90%;
+    position: absolute;
+    z-index: 0;
+
+    @media screen and (max-width: 1200px) {
+      width: 40%; 
     }
 
   }
