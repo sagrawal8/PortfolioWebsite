@@ -183,13 +183,11 @@
   }
 
   .app__header-img-eye {
-    visibility: hidden;
-    @media screen and (min-width: 1918px) {
+    @media screen and (max-width: 1920px) {
       visibility: visible;
       z-index: 2;
       width: 5%;
       position: absolute;
-      object-fit: center;
     }
     
 

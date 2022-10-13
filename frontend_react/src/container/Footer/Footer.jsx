@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { MagneticButton } from '../../components';
 
 import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
@@ -66,7 +67,25 @@ const Footer = () => {
               onChange={handleChangeInput}
             />
           </div>
-          <button type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
+          <MagneticButton
+            className="button-1 p-text"
+            style={{backgroundColor: 'transparent'}}
+            scale={2}
+            tollerance={.8}
+            speed={.3}
+            borderRadius='50%'
+          >
+            <MagneticButton
+              className="button-1 p-text"
+              scale={4}
+              tollerance={1}
+              speed={.5}
+              borderRadius='50%'
+              onClick={handleSubmit}
+            >
+              {!loading ? 'Send Message' : 'Sending...'}
+            </MagneticButton>
+          </MagneticButton>
         </div>
       ) : (
         <div>
