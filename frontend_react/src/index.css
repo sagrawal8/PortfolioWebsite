@@ -2,7 +2,8 @@
 
 :root {
   --font-base: "DM Sans", sans-serif;
-
+  --clr-neon: hsl(317 100% 54%);
+  --clr-bg: hsl(323 21% 16%);
   --primary-color: #edf2f8;
   --secondary-color: #313bac;
   --black-color: #030303;

@@ -38,7 +38,7 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">Take a coffee & chat with me</h2>
+      <h2 className="head-text" style={{color: "white"}}>Take a coffee & chat with me</h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
@@ -68,20 +68,20 @@ const Footer = () => {
             />
           </div>
           <MagneticButton
-            className="button-1 p-text"
+            className="button-1"
             style={{backgroundColor: 'transparent'}}
             scale={2}
             tollerance={.8}
             speed={.3}
             borderRadius='50%'
           >
-            <MagneticButton
-              className="button-1 p-text"
-              scale={4}
-              tollerance={1}
-              speed={.5}
-              borderRadius='50%'
-              onClick={handleSubmit}
+          <MagneticButton
+            className="neon-button"
+            scale={4}
+            tollerance={1}
+            speed={.5}
+            borderRadius='50%'
+            onClick={handleSubmit}
             >
               {!loading ? 'Send Message' : 'Sending...'}
             </MagneticButton>
@@ -101,5 +101,5 @@ const Footer = () => {
 export default AppWrap(
   MotionWrap(Footer, 'app__footer'),
   'contact',
-  'app__whitebg',
+  'app__blackbg',
 );

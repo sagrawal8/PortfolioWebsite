@@ -6,6 +6,10 @@
   .app__whitebg {
     background-color: var(--white-color);
   }
+
+  .app__blackbg{
+    background-color: var(--black-color);
+  }
   .app__3d{
     background-color: '#111a21'
   }
@@ -158,8 +162,8 @@
 
   .app__social__insta {
     &:hover {
-      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);  ;
-      border-color: #bc2a8d;
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+      border-color: var(--black-color);
     }
   }
 
